@@ -1,0 +1,33 @@
+@media(max-width:992px){
+  .header{
+/*    background: green;*/
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .contact-header{
+    /*background: greenyellow;*/
+    width: 100%;
+    margin-top: 10px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .header .email-header{
+    /*background:brown;*/
+    width: 100%;
+    margin-top: 7px;
+
+    margin-bottom: 10px;
+  }
+}
+@media(max-width:360px){
+  .header .contact-header h3{
+    font-size: 7.87px;
+  }
+  .header .email-header h3{
+    font-size: 7.87px;
+  }
+}
