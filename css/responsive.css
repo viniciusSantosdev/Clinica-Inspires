@@ -7,22 +7,31 @@
     align-items: center;
     justify-content: center;
   }
-  .header .contact-header{
+  .header .menu-header{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .email-header{
     /*background: greenyellow;*/
     width: 100%;
-    margin-top: 10px;
     
     display: flex;
     flex-direction: column;
   }
-  .header .email-header{
-    /*background:brown;*/
-    width: 100%;
-    margin-top: 7px;
-
-    margin-bottom: 10px;
+  .header .email-header img{
+    display: none;
   }
-}
+  .header .email-header a img.face-header{
+    display: none;
+  }
+  .header .email-header a img.insta-header{
+    display: none;
+  }
+  .header .email-header h3{
+    margin-top: 10px;
+  }
 @media(max-width:360px){
   .header .contact-header h3{
     font-size: 7.87px;

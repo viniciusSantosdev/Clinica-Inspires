@@ -7,28 +7,30 @@
   align-items: center;
   justify-content: space-between;
 }
-.header .contact-header{ 
-  /*background: red;*/ /*colocar quando for mexer com a box*/
+.header .menu-header{ 
+  /*background: red; /*colocar quando for mexer com a box*/
   height: 30%;
-  width: 50%;
+  width: 40%;
   
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.header .contact-header img{
+.header .menu-header a{
+  margin-left: 60px;
+}
+.header .email-header img{
   width: 17px;
   height: 17px;
 
   margin-right: 10px;
 }
-.header .contact-header h3{
+.header .email-header h3{
    display: flex;
    align-items: center;
    margin-right: 15px;
 }
 .header .email-header{
-  /*background: blue;*/ /*colocar quando for mexer com a box*/
+  /*background: blue; /*colocar quando for mexer com a box*/
   width: 50%;
 
   display: flex;
@@ -38,19 +40,15 @@
 .header .email-header img{
   width: 24px;
   height: 24px;
-
-  margin-right: 10px;
+  
+  margin-left: 20px;
 }
 .header .email-header .face-header{
-  margin-left: 10px;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .header .email-header .insta-header{
-  margin-left: 5px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,26 +61,33 @@
   align-items: center;
   justify-content: space-between;
 }
-.main .between-main{
- 
-
-  margin-bottom: 480px;
-}
 .main .container-main{
   margin-left: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .main .image-main{
   margin-right: 350px;
 }
 .main .container-main h1{
   font: 700 1.6rem 'Poppins';
-
-
 }
 .main .container-main h2{
   font: 600 1.4rem 'Poppins';
   margin-top: 20px;
   text-align: center;
+}
+.main .container-main button{
+  margin-top: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  background: rgb(4, 211, 97);
+  border-radius: 8px; 
+ 
+ width: 50%;
+ height: 3rem;
 }
 footer{
   position: absolute;
@@ -90,12 +95,11 @@ footer{
   background-color: #363636;
   color: #FFF;
   width: 100%;
-  height: 100px;    
+  height: 10%;    
   text-align: center;
   line-height: 100px;
   font-family: Poppins;
   font-weight: 500;
-  
 }
 footer .face-footer{
   width: 20px;
