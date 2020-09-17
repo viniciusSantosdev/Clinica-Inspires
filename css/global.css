@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+background: #f0f0f5;
+-webkit-font-smoothing: antialiased;
+
+width: 100vw;
+height: 100vh;
+}
+a,i,h1, h2, h3{
+  color: #fdfbfb;
+  font: 500 15px 'Poppins';
+}
+
+/*header CSS*/
+.header{
+  background: #363636;
+  height: 8vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .menu-header{ 
+  /* background: red; /*colocar quando for mexer com a box */
+  height: 30%;
+  width: 40%;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.header .menu-header a{
+  margin-left: 60px;
+  /* border: solid 1px red;
+  height: 100px; */
+}
+.header .email-header img{
+  width: 17px;
+  height: 17px;
+
+  margin-right: 10px;
+}
+.header .email-header h3{
+   display: flex;
+   align-items: center;
+   margin-right: 15px;
+}
+.header .email-header{
+  /*background: blue; /*colocar quando for mexer com a box*/
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .email-header img{
+  width: 24px;
+  height: 24px;
+  
+  margin-left: 20px;
+}
+.header .email-header .face-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .email-header .insta-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.header .menu-header a:hover{
+  background-color: #f0f0f5;
+  color: black;
+}

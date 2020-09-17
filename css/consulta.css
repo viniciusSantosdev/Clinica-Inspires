@@ -1,0 +1,42 @@
+.main{
+  width: 100%;
+  height: 90vh;
+
+  border: blue solid 1px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .container-main{
+  margin-left: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+.main .image-main{
+  margin-right: 350px;
+
+  margin-bottom: 80px;
+}
+.main .container-main h1{
+  font: 700 1.6rem 'Poppins';
+}
+.main .container-main h2{
+  font: 600 1.4rem 'Poppins';
+  margin-top: 20px;
+  text-align: center;
+}
+.main .container-main button{
+  margin-top: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  background: rgb(4, 211, 97);
+  border-radius: 8px; 
+ 
+ width: 50%;
+ height: 3rem;
+}
