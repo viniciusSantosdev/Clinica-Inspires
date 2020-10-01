@@ -17,22 +17,29 @@
   </script> <!-- script for use icons of the Font Awesome -->
 </head>
 
-<body>    
-    <div class="login-content">
-      <h1>Login</h1>
-      <h2>USERNAME</h2>
-      <form>
-        <input id="nameId" type="text" required="required" name="username">
-        <label for="username"></label>
+<body>
+  <div class="login-content">
+    <h1>Login</h1>
 
-        <h2>SENHA</h2>
-        <input id="usernameId" type="text" required="required" name="name">
-        <label for="name"></label>
+    <label for="email">E-mail</label>
+    <input id="email" type="text" required="required" name="email">
 
-        <button type="submit" onclick="">Entrar</button>
-        
-        <a href="/index.html">Voltar a Home</a>
-      </form>
+    <label for="password">Senha</label>
+    <input id="password" type="password" required="required" name="password">
+
+    <button onclick="loginAccount()">Entrar</button>
+
+    <div class="links">
+      <a href="register.html">Registrar-se</a>
+      <a href="../index.html">Voltar a Home</a>
     </div>
+
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+
+  <script src="/js/main.js"></script>
 </body>
+
 </html>
