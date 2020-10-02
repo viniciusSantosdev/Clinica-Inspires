@@ -41,3 +41,19 @@
   }
 }
 }
+@media(max-width:1887px){
+  .header .email-header img {
+    display: none;
+  }
+  .header .email-header a{
+    display: none;
+  }
+  .header .email-header h2{
+    display: none;
+  }
+}
+@media(max-width:1387px){
+  .header .email-header{
+    
+  }
+}

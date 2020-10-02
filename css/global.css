@@ -41,7 +41,7 @@ a,i,h1, h2, h3{
   /* border: solid 1px red;
   height: 100px; */
 }
-.header .email-header img{
+.header .email-header i{
   width: 17px;
   height: 17px;
 
@@ -60,10 +60,7 @@ a,i,h1, h2, h3{
   align-items: center;
   justify-content: center;
 }
-.header .email-header img{
-  width: 24px;
-  height: 24px;
-  
+.header .email-header i{
   margin-left: 20px;
 }
 .header .email-header .face-header{

@@ -62,6 +62,7 @@ function loginAccount() {
             .then(function (user) {
                 alert("Logado com sucesso!");
                 auth = user;
+                window.location.replace("http://www.google.com.br");
             }).catch(function (error) {
                 alert("Falha ao logar")
             })
