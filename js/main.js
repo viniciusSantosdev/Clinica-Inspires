@@ -21,24 +21,32 @@ function createAccount() {
 
     // login validation
     if (email == "") {
-        alert("Preencha o E-mail");
+        response.innerHTML = "Preencha o email";
+        response.className = "error";
         document.getElementById("createEmail").focus();
     } else if (password == "") {
-        alert("Coloque a senha");
+        response.innerHTML = "Preencha a senha";
+        response.className = "error";
         document.getElementById("createPass").focus();
     } else if (confirmPassword == "") {
-        alert("Coloque a confirmação de senha");
+        response.innerHTML = "Preencha a confirmação de senha";
+        response.className = "error";
         document.getElementById("confirmPass").focus();
     } else if (confirmPassword != password) {
-        alert("Suas senhas não correspondem")
+        response.innerHTML = "Suas senhas não estão iguais";
+        response.className = "error";
     } else {
         firebase.auth().createUserWithEmailAndPassword(email, password)
             .then(function (user) {
-                alert("Cadastrado com sucesso!");
+                response.innerHTML = "Cadastrado com sucesso";
+                response.className = "success";
                 auth = user;
 
+                // window.location.replace("");
+
             }).catch(function (error) {
-                alert("Falha ao cadastrar")
+                response.innerHTML = "Desculpe, ocorreu um erro ao cadastrar. Tente novamente mais tarde";
+                response.className = "error";
             })
     }
 }
@@ -52,19 +60,24 @@ function loginAccount() {
 
     // login validation
     if (email == "") {
-        alert("Preencha o E-mail");
+        response.innerHTML = "Preencha o email";
+        response.className = "error";
         document.getElementById("email").focus();
+        return
     } else if (password == "") {
-        alert("Coloque a senha");
+        response.innerHTML = "Prencha a senha"
+        response.className = "error";
         document.getElementById("password").focus();
     } else {
         firebase.auth().signInWithEmailAndPassword(email, password)
             .then(function (user) {
-                alert("Logado com sucesso!");
+                response.innerHTML = "Logado com sucesso"
+                response.className = "success";
                 auth = user;
-                window.location.replace("http://www.google.com.br");
+                // window.location.replace("http://www.google.com.br");
             }).catch(function (error) {
-                alert("Falha ao logar")
+                response.innerHTML = "Login ou senha incorretos"
+                response.className = "error";
             })
     }
 }

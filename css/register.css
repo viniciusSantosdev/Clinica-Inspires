@@ -58,9 +58,17 @@ button{
     color: #555555;
     display: block;
   }
-  /* .olho {
-    cursor: pointer;
-    position: absolute;
-    width: 20px;
-  } */
-  
+  .btnresponse{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .error {
+    color: #ff2222;
+  }
+  .success{
+    color: #00FF00;
+  }
+  input:focus{
+    border: 2px solid #000000;
+  }  

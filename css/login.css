@@ -48,6 +48,7 @@ button{
   background-color: #333333;
   outline: none;
   margin-left: 0px;
+  display: inline;
 }
 button:hover{
   background-color: #121212;
@@ -63,3 +64,17 @@ a{
   color: #555555;
   display: inline;
 }
+.btnresponse{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.error {
+  color: #ff2222;
+}
+.success{
+  color: #00FF00;
+}
+input:focus{
+  border: 2px solid #000000;
+}  
